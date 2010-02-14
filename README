@@ -1,0 +1,7 @@
+var canvas = document.getElementById("canvas");
+var p = new P5JsGraph();
+p.canvas(canvas);
+p.set_size(300,200);
+var obj = {"x_axis": [0,"hoge","fuga",3,4,5], "y_axis": [0,10,30], "values" : { "hoge": [0, 10,15,20,10,10], "fuga": [0, 5,20,10,0,30] } };
+p.set_data(obj);
+p.linechart();
